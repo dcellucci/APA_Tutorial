@@ -17,7 +17,7 @@ In `./src`, I've included all of these files, so you can use them. They even hav
 
 We can recreate this code pretty easily on the Arduino, simply by connecting two together. Here is a simple diagram showing the wiring I for this test:
 
-![Two Arduinos](/src/apa_arduino/Fritzing_Schematic_bb)
+![Two Arduinos](src/apa_arduino/Fritzing_Schematic_bb.png)
 
 
 
