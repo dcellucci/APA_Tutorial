@@ -1014,7 +1014,7 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>readme</title></head><body><article class="markdown-body"><h2 id="tutorial-for-asynchronous-packet-automata"><a name="user-content-tutorial-for-asynchronous-packet-automata" href="#tutorial-for-asynchronous-packet-automata" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tutorial for Asynchronous Packet Automata</h2>
+</style><title>index</title></head><body><article class="markdown-body"><h2 id="tutorial-for-asynchronous-packet-automata"><a name="user-content-tutorial-for-asynchronous-packet-automata" href="#tutorial-for-asynchronous-packet-automata" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Tutorial for Asynchronous Packet Automata</h2>
 <p><em>Original Design by Neil Gershenfeld</em> ~ <em>Tutorial Written by Daniel Cellucci</em></p>
 <h2 id="starting-out"><a name="user-content-starting-out" href="#starting-out" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Starting Out</h2>
 <p>One of the first things I did when I began working with APA was port the system over to Arduino. I did this partly because reading through the code helped me learn what was going on, and partly because I enjoy Arduino and I think that APA will make a fine addition to the ecosystem.</p>
@@ -1024,7 +1024,7 @@ body .markdown-body
 <p>APA comes with two sample boards and code to accompany them- one labelled <em>FTDI</em> and one labelled <em>IO</em>. These correspond to a board you talk to via USB, and a board that can talk to the FTDI board using APA and can change various inputs and outputs. </p>
 <p>In <code>./src</code>, I&rsquo;ve included all of these files, so you can use them. They even have the traces so you can make the boards and play with them. </p>
 <p>We can recreate this code pretty easily on the Arduino, simply by connecting two together and writing a little code. Here is a simple diagram showing the wiring for this test:</p>
-<p><img alt="Two Arduinos" src="src/apa_arduino/Fritzing_Schematic_bb.png" /></p>
+<p><img alt="Two Arduinos" src="https://raw.githubusercontent.com/dcellucci/APA_Tutorial/gh-pages/src/apa_arduino/Fritzing_Schematic_bb.png" /></p>
 <p>I&rsquo;ve also included the Arduino sketches for the FTDI and IO boards. They&rsquo;re located under the </p>
 <p>We can test them out by hooking them up as in the picture above, uploading the code for each, and connecting your USB to the board labelled FTDI. Then just open up the serial monitor of your choice and wait a second for the system to boot.</p>
 <p>You should see a message like <code>"Hello, I am an FTDI Arduino!"</code>. If you don&rsquo;t, you might have chosen the wrong port, or maybe the wrong baud rate (we&rsquo;re going to stick to a slow 9600). </p>
